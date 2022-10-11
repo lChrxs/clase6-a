@@ -1,0 +1,9 @@
+<div *ngIf="personaje$ | async as personaje">
+<!-- {{personaje | json}} -->
+
+  <ul *ngFor="let item of personaje.character.results">
+    <li>{{item.name}}</li>
+    <li><img [src]="item.image" alt=""></li>
+  </ul>
+
+</div>
